@@ -10,6 +10,7 @@ int main()
          "こんにちは、私の名前はジョンスミスです。１０サイズ以上の文字列を作成します");
     
     printf("kotae=%s",x);
+    printf("aa");
     /*
     //出力結果:Korega=こんに%
     (void)snprintf(x,sizeof(x),y);
