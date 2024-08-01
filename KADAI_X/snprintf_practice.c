@@ -3,14 +3,17 @@
 int main()
 {
     char x[10];
+    char test[50];
     char y[] = "こんにちは、私の名前はジョンスミスです。１０サイズ以上の文字列を作成します";
+    char o[10] = "xyz";
+    char element[] = "abcdefghijkmln";
+    (void)snprintf(test, sizeof(x), "%.*s/%.*s",5 , o, 50 , element);
     
-    // (void)snprintf(x, sizeof(x), "%.*s", (int)sizeof(x), y);
-    (void)snprintf(x, sizeof(x), "%.*s", (int)sizeof(x),
-         "こんにちは、私の名前はジョンスミスです。１０サイズ以上の文字列を作成します");
+    // // (void)snprintf(x, sizeof(x), "%.*s", (int)sizeof(x), y);
+    // (void)snprintf(x, sizeof(x), "%.*s", (int)sizeof(x),
+    //      "こんにちは、私の名前はジョンスミスです。１０サイズ以上の文字列を作成します");
     
-    printf("kotae=%s",x);
-    printf("aa");
+    printf("ans=%s",test);
     /*
     //出力結果:Korega=こんに%
     (void)snprintf(x,sizeof(x),y);
